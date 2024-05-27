@@ -1,0 +1,10 @@
+void lowpass_init(float f0, float fs);
+void highpass_init(float f0, float fs);
+void bandstop_init(float f0, float fw, float fs);
+void bandpass_init(float f0, float fw, float fs);
+int lowpass(int x1);
+int highpass(int x1);
+int bandpass(int x1);
+int bandstop(int x1);
+int movingAvg(int *ptrArrNumbers, long *ptrSum, int pos, int len, int nextNum);
+void reset_filter();
